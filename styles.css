@@ -1,0 +1,45 @@
+.mustache {
+  position: fixed;
+  top: calc(50% - 90px);
+  left: 50%;
+}
+.mustache .left {
+  background: black;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  left: -150px;
+}
+.mustache .left::after {
+  content: '';
+  position: absolute;
+  left: -256px;
+  top: -70px;
+  transform: rotate(-40deg);
+  transform-origin: right 0px;
+  width: 210px;
+  height: 120px;
+  border-bottom: solid 180px currentColor;
+  border-radius: 0 0 0 100%;
+}
+.mustache .right {
+  background: black;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+}
+.mustache .right::after {
+  content: '';
+  position: absolute;
+  left: 106px;
+  top: -116px;
+  transform: rotate(40deg);
+  transform-origin: left 180px;
+  width: 210px;
+  height: 120px;
+  border-bottom: solid 180px currentColor;
+  border-radius: 0 0 100% 0;
+}
